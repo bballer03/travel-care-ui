@@ -13,10 +13,10 @@ const navLinks = document.querySelectorAll("[data-nav-link]");
 const navElemArr = [navOpenBtn, navCloseBtn, overlay];
 
 const navToggleEvent = function (elem) {
-  for (let i = 0; i < elem.length; i++) {
-    elem[i].addEventListener("click", function () {
+  for (const element of elem) {
+    if (!element) return;
+    element.addEventListener("click", function () {
       navbar.classList.toggle("active");
-      overlay.classList.toggle("active");
     });
   }
 }
@@ -43,4 +43,8 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 
+});
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
 });
