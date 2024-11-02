@@ -26,9 +26,6 @@ The `siteConfig.js` file is a JavaScript configuration file that holds various s
 - **Content Counts**
   - `popular_destinations_count`, `package_count`: These numbers set how many items are displayed in the popular destinations and packages sections. Alter these values to change the number of items shown.
 
-- **Image and Description Array**
-  - The array within the file contains objects with `image`, `title`, `subTitle`, `text`, and `details` properties. Each object corresponds to a popular destination or package. Adding, removing, or editing these objects will dynamically change the content displayed in the respective sections.
-
 ## Customizing the Website
 
 To customize the website, simply modify the values in the `siteConfig.js` file according to your needs. For example:
